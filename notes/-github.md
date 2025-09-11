@@ -242,13 +242,47 @@ online platform for sharing work done on Git.
 <b>Github</b> is a service that hosts Git repositories in the cloud, making it easier to collaborate with other people.
 
 - The online platform for sharing work done on Git.
-- <b>Github</b> is a service that hosts Git repositories in the cloud, making it easier to collaborate with other people.
 
 ## keyconcepts Github
 
+- <b>Github</b> is a service that hosts Git repositories in the cloud, making it easier to collaborate with other people.
+- Github the THE home of open source projects.
+- Your github profile showcases your oen projects and contributions to other projectss. It can ac as an resume that many rmployers will consult in the hiring process. by being active involved , you also stay up to date!
+- it is allowed to clone any public repo, pushing changes is a different story.
+
+### configuring SSH keys
+
+- An SSH key makes it possible to connect to Github from the terminal without having to log in every single time.
+- These steps are different for all OS systems. See resources.
+
+### Github push
+
+- When you created a repo on your local system first:
+
+* create an empty repo on github
+* connect your local reppo (add a remote)
+* Push everything to Github
+* **origin** is the conventional name for a remote
+*
+
+- When you start a new project
+
+* make a new repo on github
+* clone it to your local machine
+* when you make changes push it to github
+
 ## Commands/Syntax
+
+`git clone <url>` make a clone from your repo on github to your local machine.
+`git remote -v` to view any existing remotes for yout repository
+
+`git remote add <name> <url>` Adding a new remote to the local git repository
+`git remote rename <old> <new>` for renaming the remote
+`git remote remove <name>` Delete a remote
+`git push <remote name> <branch>` push your local repo to github
 
 ## external resources
 
 [Git documentation](https://git-scm.com/doc) The official git documentation and book for references.  
 [.gitignore file](toptal.com/developers/gitignore) A generator to create a start gitignore fi;e for specific projects
+[generate a ssh-key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
